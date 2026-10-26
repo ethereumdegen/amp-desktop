@@ -1,0 +1,15 @@
+{
+  "name": "omp-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --cwd frontend dev",
+    "build": "bun run --cwd frontend build",
+    "desktop": "tauri dev",
+    "package": "tauri build --bundles app",
+    "package:debug": "tauri build --debug --bundles app",
+    "spike": "cargo run -p omp-control --bin omp-spike",
+    "bridge": "cargo run -p desktop-core --bin desktop-bridge"
+  },
+  "devDependencies": { "@tauri-apps/cli": "^2.10.0" }
+}

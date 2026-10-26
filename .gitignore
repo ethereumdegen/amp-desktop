@@ -1,0 +1,56 @@
+/target/
+/node_modules/
+/frontend/node_modules/
+/frontend/dist/
+/src-tauri/gen/
+.DS_Store
+
+# Generated compiler state and local editor files.
+*.tsbuildinfo
+.idea/
+.vscode/
+
+# Local configuration, credentials, and signing material.
+.env
+.env.*
+!.env.example
+.npmrc
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.mobileprovision
+credentials.json
+secrets.json
+
+# Runtime state and conversations (including custom in-checkout data dirs).
+desktop.json
+desktop.json.tmp
+remote.json
+remote.json.tmp
+sms.json
+sms.json.tmp
+native-sessions/
+omp-sessions/
+sessions/
+session.json
+*.jsonl
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# Private evaluation evidence and local artifacts.
+/artifacts/
+/reports/
+/data/
+/evidence/
+report.json
+run.json
+evidence.json
+approvals.json
+traces/
+judges/

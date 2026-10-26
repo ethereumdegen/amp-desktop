@@ -1,0 +1,1 @@
+{"identifier":"main","description":"Only the local application window may use desktop commands.","windows":["main"],"permissions":["core:default"]}

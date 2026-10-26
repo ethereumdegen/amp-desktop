@@ -1,0 +1,29 @@
+[package]
+name = "native-agent"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+tokio-util = "0.7"
+reqwest = { version = "0.12", default-features = false, features = ["json", "stream", "rustls-tls"] }
+futures-util = "0.3"
+keyring = { version = "3", features = ["apple-native"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+globset = "0.4"
+regex = "1"
+libc = "0.2"
+base64 = "0.22"
+sha2 = "0.10"
+xxhash-rust = { version = "0.8", features = ["xxh64"] }
+pi-diff = { path = "../../vendor/pi-diff" }
+tempfile = "3"
+ammonia = "4"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+security-framework = "3"
+

@@ -1,0 +1,14 @@
+[package]
+name = "pi-diff"
+version = "18.12.6"
+edition = "2024"
+license = "MIT"
+authors = ["Stencil Labs, Inc."]
+homepage = "https://omp.sh/"
+repository = "https://github.com/can1357/oh-my-pi"
+publish = false
+
+[package.metadata.upstream]
+revision = "0b5c27ab24719c86a5986b95ee55f4e75bc1aaa0"
+path = "crates/pi-diff"
+source_git_blob = "970fd11ea8b25d32edd5adedfb4e86bdc548586b"

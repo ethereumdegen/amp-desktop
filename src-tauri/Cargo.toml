@@ -1,0 +1,25 @@
+[package]
+name = "omp-desktop"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "A native desktop interface for OMP and a Rust agent engine"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+tauri-utils = { version = "2", features = ["build"] }
+serde_json = "1"
+json-patch = "4"
+
+[dependencies]
+desktop-core = { path = "../crates/desktop-core" }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-opener = "2"
+url = "2"
+tokio = { version = "1", features = ["full"] }

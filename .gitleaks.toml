@@ -1,0 +1,13 @@
+title = "AMP Desktop secret scanning"
+
+[extend]
+useDefault = true
+
+# Public Anthropic feature-version names, not an OAuth token. Match only this
+# exact header line in this file; retain all default secret-detection rules.
+[[allowlists]]
+description = "Public Anthropic beta feature header"
+condition = "AND"
+paths = ['''^crates/native-agent/src/provider\.rs$''']
+regexTarget = "line"
+regexes = ['''^\s*\.header\("anthropic-beta", "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14"\)$''']

@@ -1,0 +1,18 @@
+{
+  "name": "AMP Remote",
+  "short_name": "AMP Remote",
+  "description": "Control the bots on your running AMP Desktop over your private tailnet.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#101113",
+  "theme_color": "#101113",
+  "icons": [
+    {
+      "src": "/remote-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
